@@ -1,0 +1,25 @@
+/*footer style start*/ 
+
+footer {
+    margin-top: 2rem;
+    background: $new;
+    color: $light;
+    text-align: center;
+    padding: 1rem;
+    #scrollTop {
+        z-index: 1000;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+a#backToTop {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 20%;
+    left: 80%;
+    background: transparentize($color: #428bca, $amount: 0);
+    z-index: 1900;
+}
+
+/*footer style end*/

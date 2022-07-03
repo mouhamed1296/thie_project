@@ -1,0 +1,85 @@
+.form {
+    border: 2px solid #80bdff;
+    border-top: none;
+    margin: 0  100px 100px;
+    /*border-color: #b8daff;*/
+    &-header {
+        padding: 50px;
+        margin: 0  100px;
+        border: 2px solid #80bdff;
+        /*border-bottom: none;*/
+        background-color: $new;
+    }
+    &-body {
+        width: 80%;
+    }
+    &-group > label > span{
+        display: none;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+    &-control {
+        &:focus {
+            + .lds-dual-ring {
+                display: flex;
+            }
+        }
+    }
+}
+#myForm {
+    padding: 10px 50px 50px;
+}
+.col-form-label {
+    width: 100%;
+}
+
+.lds-dual-ring {
+    display: none;
+    width: 80px;
+    height: 80px;
+    margin-top: 6px;
+    &:after {
+        content: " ";
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 4px solid;
+        border-color: $light transparent $light transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+}
+@keyframes lds-dual-ring {
+    0%{
+        transform: rotate(0deg);
+        border-color: $success transparent;
+    }
+    25% {
+        transform: rotate(90deg);
+        border-color: $error transparent;
+    }
+    50% {
+        transform: rotate(180deg);
+        border-color: $error transparent;
+    }
+    75% {
+        transform: rotate(270deg);
+        border-color: $success transparent;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-color: $success transparent;
+    }
+}
+.fa {
+    &-asterisk{
+        color:red;
+        font-size:7px;
+    }
+    &-check-circle{
+        color: $success;
+        display: none;
+    }
+}
+

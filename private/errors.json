@@ -1,0 +1,18 @@
+{
+    "empty_username": "Veuillez saisir un nom d'utilisateur",
+    "empty_email": "Veuillez saisir une adresse email",
+    "empty_password": "Veuillez saisir un mot de passe",
+    "username_tooLong": "Le nom d'utilisateur saisie est trop long, saisissez 20 caract\u00e8res au maximum",
+    "username_tooShort": "Le nom d'utilisateur saisie est trop court, saisissez 8 caract\u00e8res au minimum",
+    "bad_username_syntax": "Le nom d'utilisateur ne doit contenir que des caract\u00e8res alphanum\u00e9riques",
+    "bad_mail_syntax": "l'email saisie n'est pas dans le bon format",
+    "bad_syntax_type": "Erreur de syntaxe",
+    "not_match_username": "Le nom d'utilisateur saisie est invalide",
+    "not_match_password": "Le mot de passe saisie est invalide",
+    "not_match_email": "L'email saisie est incorrect",
+    "no_user_session": "Aucune session n'a \u00e9t\u00e9 initialis\u00e9e",
+    "empty_fields": "Veuillez remplir tous les champs",
+    "no_image": "Veuillez choisir une image",
+    "empty_category": "Veuillez saisir la categorie du produit",
+    "empty_libelle": "Veuillez saisir le nom du produit"
+}

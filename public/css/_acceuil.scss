@@ -1,0 +1,117 @@
+/* Top container */
+.top-container {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas:
+            'showcase showcase top-box-a'
+            'showcase showcase top-box-b';
+    /*margin-top: 10px;*/
+}
+.fa-star{
+    color: darken($color: #ffd600, $amount: 3%);
+    padding: 3% 0;
+}
+/* showcase */
+.showcase {
+    grid-area: showcase;
+    min-height: 190px;
+    /*background-size: cover;
+    background: url(../img/showcasef.jpg) no-repeat center;
+    background-color: grayscale($color: #ccc);
+    padding: 4rem;*/
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: $shadow;
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        color: $light;
+    }
+    p {
+        font-size: 1.3rem;
+        margin-top: 0;
+        color: $light;
+    }
+}
+/* TOp Box */
+.top-box {
+    background: $light;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: $shadow;
+    padding: 1.5rem;
+    .price {
+        font-size: 2rem;
+    }
+    &-a {
+        grid-area: top-box-a;
+    }
+    &-b {
+        grid-area: top-box-b;
+    }
+}
+/* Boxes */
+.boxes {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .box {
+        background: $light;
+        text-align: center;
+        padding: 1.5rem 2rem;
+        box-shadow: $shadow;
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,.8);
+            z-index: 10000;
+            border: 1px solid $default-color;
+            h3 {
+                color: $default-color;
+            }
+            @while $i<=4 {
+                &:nth-child(#{$i}) {
+                    color: $default-color;
+                }
+                &:nth-child(#{$i}) p {
+                    color: $black;
+                }
+                $i: $i+1;
+            }
+        }
+    }
+}
+
+/* Info */
+
+.info {
+    background: $light;
+    box-shadow: $shadow;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+   /* margin-top: 20px;*/
+    margin-bottom: 20px;
+}
+
+/* Portfolio */
+
+.portfolio {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns:  repeat(auto-fit, minmax(150px, 1fr));
+    img {
+        width: 100%;
+        height: 190px;
+        box-shadow: $shadow;
+    }
+}
+

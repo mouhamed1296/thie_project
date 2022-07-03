@@ -1,0 +1,38 @@
+/*Menu de Navigation start*/
+
+.main-nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    ul{
+        display: grid;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(4, 1fr);
+        li {
+            width: 100%;
+        }
+    }
+    a {
+        background: $light;
+        display: block;
+        text-decoration: none;
+        padding: 0.8rem;
+        text-align: center;
+        color: $dark;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        box-shadow: $shadow;
+        &.current {
+            border-bottom: 5px solid $new;
+        }
+        &:hover {
+            background: $new;
+            color: $light;
+        }
+    }
+}
+
+
+/*Navigation Menu end*/

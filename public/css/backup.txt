@@ -1,0 +1,32 @@
+@mixin check($is-valid: true){
+    @if $is-valid{
+        .form-control {
+            &:not(:focus):valid {
+                border: 1px solid $success;
+                &+.lds-dual-ring + .fa-check-square {
+                    display: flex;
+                    color: $success;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    @else {
+        .form-control {
+            &:not(:focus):invalid{
+                border: 1px solid $error;
+                &+.lds-dual-ring + .fa-check-square + .fa-times-circle {
+                    display: flex;
+                    color: $error;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+.valid {
+    @include check($is-valid: true);
+}
+.invalid {
+    @include check($is-valid: false);
+}

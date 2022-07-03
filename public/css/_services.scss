@@ -1,0 +1,202 @@
+/*img.customImage {
+    height: 150px;
+    max-width: 0 !important;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/*.mycart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    z-index: 1000;
+    /*background: rgb(214, 231, 248);*/
+    /*padding: 1.5rem;
+    transition: $mainTransition;
+    /*transform: translateX(100%);*/
+    /*&-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: $mainTransition;
+        background: rgba(66, 139, 202, 0.5);
+        z-index: 999;
+        visibility: hidden;
+    }
+    h2 {
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: $mainSpacing;
+        margin-bottom: 2rem;
+    }
+    &-item {
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto 1fr auto;
+        grid-column-gap: 1.5rem;
+        margin: 1.5rem 0;
+        img {
+            width: 75px;
+            height: 75px;
+        }
+        h4 {
+            font-size: 0.85rem;
+            text-transform: capitalize;
+            letter-spacing: $mainSpacing;
+        }
+        h5{
+            margin: 0.5rem 0;
+            letter-spacing: $mainSpacing;
+        }
+    }
+    &-footer {
+        margin-top: 2rem;
+        letter-spacing: $mainSpacing;
+        text-align: center;
+        h3 {
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+        }
+    }
+}
+.close-mycart {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.item-amount {
+    text-align: center;
+}
+.remove-item {
+    color: grey;
+    cursor: pointer;
+}
+.fa-chevron {
+    &-up, &-down {
+        color: $new;
+        cursor: pointer;
+    }
+}
+
+/* cart styles start */
+
+/*.cart {
+    &-header {
+        font-weight: bold;
+        font-size: 1.25em;
+        color: $dark;
+    }
+    &-column {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $black;
+        margin-right: 1.5em;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    &-row {
+        display: flex;
+        &:last-child {
+            border-bottom: 3px solid $dark;
+            .cart-column {
+                border: none;
+            }
+        }
+    }
+    &-item {
+        width: 45%;
+        &-title {
+            color: $dark;
+            margin-left: .5em;
+            font-size: 1.2em;
+        }
+        &-image {
+            width: 75px;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+    &-price {
+        width: 20%;
+        font-size: 1.2em;
+        color: $dark;
+    }
+    &-quantity {
+        width: 55%;
+        &-input {
+            height: 34px;
+            width: 50px;
+            border-radius: 5px;
+            border: 1px solid #56ccf2;
+            background-color: #eee;
+            color: $dark;
+            padding: 0;
+            text-align: center;
+            font-size: 1.2em;
+            margin-right: 25px;
+        }
+    }
+    &-btn {
+        text-align: center;
+        vertical-align: middle;
+        padding: .67em .67em;
+        cursor: pointer;
+        &-danger {
+            color: $light;
+            background-color: #EB5757;
+            border: none;
+            border-radius: .3em;
+            font-weight: bold;
+            &:hover {
+                background-color: #cc4c4c;
+            }
+        }
+    }
+    &-total {
+        text-align: end;
+        margin-top: 10px;
+        margin-right: 10px;
+        &-title {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: $black;
+            margin-right: 20px;
+        }
+        &-price {
+            color: #333;
+            font-size: 1.1em;
+        }
+    }
+    &-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1.5em;
+    }
+}
+.content-section {
+    margin: 1em;
+}
+.section-header {
+    font-weight: normal;
+    color: $dark;
+    text-align: center;
+    font-size: 2.5em;
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+/* cart-style-end */
+
+/*@media screen and (min-width: 768px){
+    .mycart {
+        width: 30vw;
+        min-width: 450px;
+    }
+}*/
